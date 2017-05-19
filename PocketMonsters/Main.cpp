@@ -31,7 +31,9 @@ int main()
 
 	vector<Pokemon> player_pokemon;
 	vector<Pokemon> rival_pokemon;
-	int pick_pokemon;
+	int choices;
+	char yes_no;
+
 	string nickname_pokemon;
 
 	cout << "Hello There! Welcome to the world of pokemon!\n";
@@ -48,10 +50,26 @@ int main()
 	cout << "2 : Squirtle\n";
 	cout << "3 : Charmander\n";
 
-	cin >> pick_pokemon;
-	createPokemon(player_pokemon, pick_pokemon);
+	cin >> choices;
+	createPokemon(player_pokemon, choices);
+	system("cls");
 
+	cout << "Would you like to give " << player_pokemon.back().getName() << " a nickname? (y/n)" << endl;
+	cin >> yes_no;
+	if (yes_no == 'y')
+	{
+		cout << "Insert the nickname for " << player_pokemon.back().getName() << ": ";
+		cin >> nickname_pokemon;
+		namePokemon(player_pokemon, nickname_pokemon);
+		cout << "You've given " << player_pokemon.back().getName() << " the nickname: " << player_pokemon.back().getNickname() << ".\n";
+	}
+	system("cls");
 
+	cout << "Now that you have chosen your pokemon you will now battle your rival.\n";
+	system("pause");
+	system("cls");
+
+	//battle system
 
 	system("pause");
 	return 0;
