@@ -1,9 +1,20 @@
 
 #include"ClassDeclarations.h"
 
-void Pokemon::setName(string name)
+void Pokemon::which_pokemon(int type)
 {
-	name_ = name;
+	if (type == 1)
+	{
+		name_ = "Bulbasaur";
+	}
+	else if (type == 2)
+	{
+		name_ = "Squirtle";
+	}
+	else
+	{
+		name_ = "Charmander";
+	}
 }
 
 string Pokemon::getName()

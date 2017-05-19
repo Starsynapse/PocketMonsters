@@ -5,6 +5,6 @@
 
 #include"ClassDeclarations.h"
 
-
+void createPokemon(vector<Pokemon> &pokemon_class, int type);
 
 #endif

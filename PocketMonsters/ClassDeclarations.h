@@ -5,12 +5,13 @@
 
 #include<string>
 #include<iostream>
+#include<vector>
 using namespace std;
 
 class Pokemon
 {
 public:
-	void setName(string name);
+	void which_pokemon(int type);
 	string getName();
 	void setNickname(string nickname);
 	string getNickname();
@@ -18,7 +19,5 @@ private:
 	string name_;
 	string nickname_;
 };
-
-class Bulbasaur:: 
 
 #endif
