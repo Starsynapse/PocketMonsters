@@ -111,13 +111,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ClassDefinitions.cpp" />
-    <ClCompile Include="FunctionDefinitions.cpp" />
+    <ClCompile Include="PartyClassDefinitions.cpp" />
+    <ClCompile Include="PartyFunctionDefinitions.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassDeclarations.h" />
-    <ClInclude Include="FunctionDeclarations.h" />
+    <ClInclude Include="PartyClassDeclarations.h" />
+    <ClInclude Include="PartyFunctionDeclarations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,8 +3,8 @@ Author: Eduardo Zamora
 Date Created: 18 May 2017
 Date Edited: 18 May 2017*/
 
-#include"FunctionDeclarations.h"
-#include"ClassDeclarations.h"
+#include"PartyFunctionDeclarations.h"
+#include"PartyClassDeclarations.h"
 #include<vector>
 #include<chrono>
 #include<thread>
@@ -13,29 +13,15 @@ using namespace std;
 
 int main()
 {
-	/*
-	vector<Pokemon> pokemon;
-
-	int number_of_pokemon;
-	cin >> number_of_pokemon;
-
-	pokemon.resize(number_of_pokemon);
-	cout << "Size: " << pokemon.size() << endl;
-
-	string give_nickname;
-	cout << "Give Pokemon a nickname: ";
-	cin >> give_nickname;
-	pokemon[0].setNickname(give_nickname);
-	cout << "Nickname: " << pokemon[0].getNickname() << endl;
-	*/
-
+	//initialization of variables and vectors
 	vector<Pokemon> player_pokemon;
 	vector<Pokemon> rival_pokemon;
 	int choices;
 	char yes_no;
-
 	string nickname_pokemon;
+	int earned_exp;
 
+	//introduction
 	cout << "Hello There! Welcome to the world of pokemon!\n";
 	system("pause");
 	system("cls");
@@ -50,10 +36,12 @@ int main()
 	cout << "2 : Squirtle\n";
 	cout << "3 : Charmander\n";
 
+	//pokemon choice
 	cin >> choices;
 	createPokemon(player_pokemon, choices);
 	system("cls");
 
+	//option to nickname starter
 	cout << "Would you like to give " << player_pokemon.back().getName() << " a nickname? (y/n)" << endl;
 	cin >> yes_no;
 	if (yes_no == 'y')
@@ -64,12 +52,19 @@ int main()
 		cout << "You've given " << player_pokemon.back().getName() << " the nickname: " << player_pokemon.back().getNickname() << ".\n";
 	}
 	system("cls");
-
 	cout << "Now that you have chosen your pokemon you will now battle your rival.\n";
 	system("pause");
 	system("cls");
 
-	//battle system
+	//testing
+	cout << "EXP to be earned: ";
+	cin >> earned_exp;
+	checkExpLvlUp(player_pokemon, earned_exp);
+	cout << player_pokemon.back().getNickname() << " earned " << earned_exp << " exp!\n";
+	cout << "Exp: " << player_pokemon.back().getExperience() << endl;
+	cout << "Exp Needed for lvl: " << player_pokemon.back().getExpLvlUp() << endl;
+	cout << "New exp target: " << player_pokemon.back().getExpLvlUp() << endl;
+	cout << "LVL: " << player_pokemon.back().getLevel() << endl;
 
 	system("pause");
 	return 0;

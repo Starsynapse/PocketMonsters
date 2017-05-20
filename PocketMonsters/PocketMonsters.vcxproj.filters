@@ -18,18 +18,18 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FunctionDefinitions.cpp">
+    <ClCompile Include="PartyClassDefinitions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ClassDefinitions.cpp">
+    <ClCompile Include="PartyFunctionDefinitions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FunctionDeclarations.h">
+    <ClInclude Include="PartyClassDeclarations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClassDeclarations.h">
+    <ClInclude Include="PartyFunctionDeclarations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
