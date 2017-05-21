@@ -5,10 +5,7 @@ Date Edited: 18 May 2017*/
 
 #include"PartyFunctionDeclarations.h"
 #include"PartyClassDeclarations.h"
-#include<vector>
-#include<chrono>
-#include<thread>
-#include<iostream>
+#include"PartyCoutDeclarations.h"
 using namespace std;
 
 int main()
@@ -33,8 +30,8 @@ int main()
 	system("cls");
 	cout << "Now pick one!\n";
 	cout << "1 : Bulbasaur\n";
-	cout << "2 : Squirtle\n";
-	cout << "3 : Charmander\n";
+	cout << "2 : Charmander\n";
+	cout << "3 : Squirtle\n";
 
 	//pokemon choice
 	cin >> choices;
@@ -57,14 +54,13 @@ int main()
 	system("cls");
 
 	//testing
+
+
 	cout << "EXP to be earned: ";
 	cin >> earned_exp;
 	checkExpLvlUp(player_pokemon, earned_exp);
-	cout << player_pokemon.back().getNickname() << " earned " << earned_exp << " exp!\n";
-	cout << "Exp: " << player_pokemon.back().getExperience() << endl;
-	cout << "Exp Needed for lvl: " << player_pokemon.back().getExpLvlUp() << endl;
-	cout << "New exp target: " << player_pokemon.back().getExpLvlUp() << endl;
-	cout << "LVL: " << player_pokemon.back().getLevel() << endl;
+	endOfBattleText(player_pokemon, earned_exp);
+	
 
 	system("pause");
 	return 0;

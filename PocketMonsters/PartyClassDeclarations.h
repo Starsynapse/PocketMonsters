@@ -28,6 +28,13 @@ private:
 	int exp_;
 	int exp_lvlup_;
 	int lvl_;
+
+	int hp_;
+	int attack_;
+	int defense_;
+	int sp_atk_;
+	int sp_def_;
+	int speed_;
 };
 
 #endif

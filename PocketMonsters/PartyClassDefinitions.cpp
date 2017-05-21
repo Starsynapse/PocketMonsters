@@ -14,16 +14,34 @@ void Pokemon::which_pokemon(int type)
 	{
 		name_ = "Bulbasaur";
 		nickname_ = "Bulbasaur";
+		hp_ = 45;
+		attack_ = 49;
+		defense_ = 49;
+		sp_atk_ = 65;
+		sp_def_ = 65;
+		speed_ = 45;
 	}
 	else if (type == 2)
 	{
-		name_ = "Squirtle";
-		nickname_ = "Squirtle";
+		name_ = "Charmander";
+		nickname_ = "Charmander";
+		hp_ = 39;
+		attack_ = 52;
+		defense_ = 43;
+		sp_atk_ = 60;
+		sp_def_ = 50;
+		speed_ = 65;
 	}
 	else
 	{
-		name_ = "Charmander";
-		nickname_ = "Charmander";
+		name_ = "Squirtle";
+		nickname_ = "Squirtle";
+		hp_ = 44;
+		attack_ = 48;
+		defense_ = 65;
+		sp_atk_ = 50;
+		sp_def_ = 64;
+		speed_ = 43;
 	}
 }
 
@@ -71,3 +89,4 @@ int Pokemon::getExpLvlUp()
 {
 	return exp_lvlup_;
 }
+

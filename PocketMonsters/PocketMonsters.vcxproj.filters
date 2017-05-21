@@ -24,12 +24,18 @@
     <ClCompile Include="PartyFunctionDefinitions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PartyCoutDefinitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PartyClassDeclarations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PartyFunctionDeclarations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartyCoutDeclarations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
