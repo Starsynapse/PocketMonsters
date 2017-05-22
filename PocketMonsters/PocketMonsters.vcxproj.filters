@@ -24,7 +24,10 @@
     <ClCompile Include="PartyFunctionDefinitions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PartyCoutDefinitions.cpp">
+    <ClCompile Include="PokemonDefinitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleDefinitions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,7 +38,10 @@
     <ClInclude Include="PartyFunctionDeclarations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PartyCoutDeclarations.h">
+    <ClInclude Include="PokemonDeclarations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleDeclarations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

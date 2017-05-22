@@ -112,14 +112,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PartyClassDefinitions.cpp" />
-    <ClCompile Include="PartyCoutDefinitions.cpp" />
+    <ClCompile Include="BattleDefinitions.cpp" />
     <ClCompile Include="PartyFunctionDefinitions.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PokemonDefinitions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PartyClassDeclarations.h" />
-    <ClInclude Include="PartyCoutDeclarations.h" />
+    <ClInclude Include="BattleDeclarations.h" />
     <ClInclude Include="PartyFunctionDeclarations.h" />
+    <ClInclude Include="PokemonDeclarations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,41 +8,9 @@ Pokemon::Pokemon()
 	exp_lvlup_ = lvl_ * lvl_ * lvl_;
 }
 
-void Pokemon::which_pokemon(int type)
+void Pokemon::setName(string name)
 {
-	if (type == 1)
-	{
-		name_ = "Bulbasaur";
-		nickname_ = "Bulbasaur";
-		hp_ = 45;
-		attack_ = 49;
-		defense_ = 49;
-		sp_atk_ = 65;
-		sp_def_ = 65;
-		speed_ = 45;
-	}
-	else if (type == 2)
-	{
-		name_ = "Charmander";
-		nickname_ = "Charmander";
-		hp_ = 39;
-		attack_ = 52;
-		defense_ = 43;
-		sp_atk_ = 60;
-		sp_def_ = 50;
-		speed_ = 65;
-	}
-	else
-	{
-		name_ = "Squirtle";
-		nickname_ = "Squirtle";
-		hp_ = 44;
-		attack_ = 48;
-		defense_ = 65;
-		sp_atk_ = 50;
-		sp_def_ = 64;
-		speed_ = 43;
-	}
+	name_ = name;
 }
 
 string Pokemon::getName()
@@ -73,6 +41,7 @@ int Pokemon::getExperience()
 void Pokemon::addLevel()
 {
 	lvl_ = lvl_++;
+	changeExpLvlUp();
 }
 
 int Pokemon::getLevel()
@@ -80,13 +49,78 @@ int Pokemon::getLevel()
 	return lvl_;
 }
 
-void Pokemon::changeExpLvlUp()
-{
-	exp_lvlup_ = lvl_ * lvl_ * lvl_;
-}
-
 int Pokemon::getExpLvlUp()
 {
 	return exp_lvlup_;
 }
 
+void Pokemon::setHealthPoints(int health)
+{
+	hp_ = health;
+}
+
+int Pokemon::getHealthPoints()
+{
+	return hp_;
+}
+
+void Pokemon::setAttack(int attack)
+{
+	attack_ = attack;
+}
+
+int Pokemon::getAttack()
+{
+	return attack_;
+}
+void Pokemon::setDefense(int defense)
+{
+	defense_ = defense;
+}
+
+int Pokemon::getDefense()
+{
+	return defense_;
+}
+
+void Pokemon::setSpecialAttack(int sp_attack)
+{
+	sp_atk_ = sp_attack;
+}
+
+int Pokemon::getSpecialAttack()
+{
+	return sp_atk_;
+}
+
+void Pokemon::setSpecialDefense(int sp_defence)
+{
+	sp_def_ = sp_defence;
+}
+
+int Pokemon::getSpecialDefense()
+{
+	return sp_def_;
+}
+
+void Pokemon::setSpeed(int speed)
+{
+	speed_ = speed;
+}
+
+int Pokemon::getSpeed()
+{
+	return speed_;
+}
+
+const Pokemon operator -(const Pokemon& pokemon_class_attacker, const Pokemon& pokemon_class_defender)
+{
+	int damage = pokemon_class_attacker.attack_ + pokemon_class_attacker.sp_atk_;
+	int damage_reduction = pokemon_class_defender.defense_ + pokemon_class_defender.sp_def_;
+	int net_damage = damage - damage_reduction;
+}
+
+void Pokemon::changeExpLvlUp()
+{
+	exp_lvlup_ = lvl_ * lvl_ * lvl_;
+}

@@ -5,7 +5,7 @@ Date Edited: 18 May 2017*/
 
 #include"PartyFunctionDeclarations.h"
 #include"PartyClassDeclarations.h"
-#include"PartyCoutDeclarations.h"
+#include"BattleDeclarations.h"
 using namespace std;
 
 int main()
@@ -39,16 +39,7 @@ int main()
 	system("cls");
 
 	//option to nickname starter
-	cout << "Would you like to give " << player_pokemon.back().getName() << " a nickname? (y/n)" << endl;
-	cin >> yes_no;
-	if (yes_no == 'y')
-	{
-		cout << "Insert the nickname for " << player_pokemon.back().getName() << ": ";
-		cin >> nickname_pokemon;
-		namePokemon(player_pokemon, nickname_pokemon);
-		cout << "You've given " << player_pokemon.back().getName() << " the nickname: " << player_pokemon.back().getNickname() << ".\n";
-	}
-	system("cls");
+	nicknamePokemonOption(player_pokemon);
 	cout << "Now that you have chosen your pokemon you will now battle your rival.\n";
 	system("pause");
 	system("cls");
@@ -60,7 +51,7 @@ int main()
 	cin >> earned_exp;
 	checkExpLvlUp(player_pokemon, earned_exp);
 	endOfBattleText(player_pokemon, earned_exp);
-	
+	cout << player_pokemon.back().getSpecialDefense() << endl;
 
 	system("pause");
 	return 0;

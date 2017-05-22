@@ -1,7 +1,7 @@
 /*Definitions for frequent cout statements
 involving the party class*/
 
-#include"PartyCoutDeclarations.h"
+#include"BattleDeclarations.h"
 
 void endOfBattleText(vector<Pokemon> &pokemon_class, int earned_exp)
 {
