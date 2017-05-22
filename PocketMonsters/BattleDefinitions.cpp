@@ -11,3 +11,56 @@ void endOfBattleText(vector<Pokemon> &pokemon_class, int earned_exp)
 	cout << "New EXP target: " << pokemon_class.back().getExpLvlUp() << endl;
 	cout << "LVL: " << pokemon_class.back().getLevel() << endl;
 }
+
+void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &pokemon_defence_class)
+{
+	int damage = pokemon_attack_class.back().getAttack();
+	int defence = pokemon_defence_class.back().getDefense();
+	int net_damage = damage - defence;
+	pokemon_defence_class.back().dealDamage(net_damage);
+}
+
+int calculateTurnOrder(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class)
+{
+	if (pokemon_player_class.back().getSpeed() > pokemon_enemy_class.back().getSpeed())
+	{
+		return 0;
+	}
+
+	else if (pokemon_player_class.back().getSpeed() < pokemon_enemy_class.back().getSpeed())
+	{
+		return 1;
+	}
+
+	else
+	{
+		return rand() % 2;
+	}
+}
+
+void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class)
+{
+	int order = calculateTurnOrder(pokemon_player_class, pokemon_enemy_class);
+	while (order < 2)
+	{
+		if (pokemon_player_class.back().getHealthPoints() == 0 || pokemon_enemy_class.back().getHealthPoints() == 0)
+		{
+			break;
+		}
+
+		else if (order == 0)
+		{
+			damageCalculation(pokemon_player_class, pokemon_enemy_class);
+		}
+
+		else if (order == 1)
+		{
+			damageCalculation(pokemon_enemy_class, pokemon_player_class);
+		}
+
+		else
+		{
+			cout << "What the hell did you break?" << endl;
+		}
+	}
+}

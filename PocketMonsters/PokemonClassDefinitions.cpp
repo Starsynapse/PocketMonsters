@@ -1,5 +1,5 @@
 
-#include"PartyClassDeclarations.h"
+#include"ClassDeclarations.h"
 
 Pokemon::Pokemon()
 {
@@ -113,13 +113,19 @@ int Pokemon::getSpeed()
 	return speed_;
 }
 
-const Pokemon operator -(const Pokemon& pokemon_class_attacker, const Pokemon& pokemon_class_defender)
+void Pokemon::dealDamage(int damage_dealt)
 {
-	int damage = pokemon_class_attacker.attack_ + pokemon_class_attacker.sp_atk_;
-	int damage_reduction = pokemon_class_defender.defense_ + pokemon_class_defender.sp_def_;
-	int net_damage = damage - damage_reduction;
+	hp_ = hp_ - damage_dealt;
 }
-
+/*
+const Pokemon operator -(Pokemon& pokemon_class_attacker, Pokemon& pokemon_class_defender)
+{
+	int damage = pokemon_class_attacker.getAttack() + pokemon_class_attacker.getSpecialAttack();
+	int damage_reduction = pokemon_class_defender.getDefense() + pokemon_class_defender.getSpecialDefense();
+	int net_damage = damage - damage_reduction;
+	pokemon_class_defender.set() = pokemon_class_defender.hp_ - net_damage;
+}
+*/
 void Pokemon::changeExpLvlUp()
 {
 	exp_lvlup_ = lvl_ * lvl_ * lvl_;

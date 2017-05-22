@@ -5,9 +5,14 @@ involving the paarty class*/
 #define COUT_DEC
 
 #include<vector>
-#include"PartyClassDeclarations.h"
+#include"ClassDeclarations.h"
 using namespace std;
 
 void endOfBattleText(vector<Pokemon> &pokemon_class, int earned_exp);
 
+void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &pokemon_defence_class);
+
+int calculateTurnOrder(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class);
+
+void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class);
 #endif COUT_DEC

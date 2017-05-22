@@ -35,7 +35,9 @@ public:
 	void setSpeed(int speed);
 	int getSpeed();
 
-	friend const Pokemon operator -(const Pokemon& damage, const Pokemon& health);
+	void dealDamage(int damage_dealt);
+
+	
 private:
 	string name_;
 	string nickname_;
@@ -53,4 +55,15 @@ private:
 	void changeExpLvlUp();
 };
 
+class MoveList
+{
+public:
+
+private:
+	string name_;
+	int type_;
+	int power_;
+	int accuracy_;
+	int pp_;
+};
 #endif

@@ -6,7 +6,7 @@
 #include<string>
 #include<iostream>
 #include<vector>
-#include"PartyClassDeclarations.h"
+#include"ClassDeclarations.h"
 using namespace std;
 
 void pokemonSelection(vector<Pokemon> &pokemon_class, int number);

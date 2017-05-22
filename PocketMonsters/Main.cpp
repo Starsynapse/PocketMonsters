@@ -4,8 +4,9 @@ Date Created: 18 May 2017
 Date Edited: 18 May 2017*/
 
 #include"PartyFunctionDeclarations.h"
-#include"PartyClassDeclarations.h"
+#include"ClassDeclarations.h"
 #include"BattleDeclarations.h"
+#include<time.h> //for srand
 using namespace std;
 
 int main()
@@ -14,11 +15,14 @@ int main()
 	vector<Pokemon> player_pokemon;
 	vector<Pokemon> rival_pokemon;
 	int choices;
+	int rival_choices;
 	char yes_no;
 	string nickname_pokemon;
 	int earned_exp;
 
-	//introduction
+	srand(time(NULL));
+
+	//introduction & pick starter text
 	cout << "Hello There! Welcome to the world of pokemon!\n";
 	system("pause");
 	system("cls");
@@ -33,7 +37,7 @@ int main()
 	cout << "2 : Charmander\n";
 	cout << "3 : Squirtle\n";
 
-	//pokemon choice
+	//starter choice
 	cin >> choices;
 	createPokemon(player_pokemon, choices);
 	system("cls");
@@ -44,8 +48,21 @@ int main()
 	system("pause");
 	system("cls");
 
-	//testing
+	//rival chooses pokemon
+	rival_choices = (choices % 3) + 1;
+	createPokemon(rival_pokemon, rival_choices);
 
+	//testing
+	
+
+	cout << "you go first." << endl;
+	cout << "Player hp: " << player_pokemon.back().getHealthPoints() << endl;
+	cout << "Rival hp: " << rival_pokemon.back().getHealthPoints() << endl;
+	mainBattleLoop(player_pokemon, rival_pokemon);
+	cout << "Player hp: " << player_pokemon.back().getHealthPoints() << endl;
+	cout << "Rival hp: " << rival_pokemon.back().getHealthPoints() << endl;
+	system("pause");
+	system("cls");
 
 	cout << "EXP to be earned: ";
 	cin >> earned_exp;
