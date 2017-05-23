@@ -111,6 +111,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MoveDefinitions.cpp" />
+    <ClCompile Include="MoveListClassDefinitions.cpp" />
     <ClCompile Include="PokemonClassDefinitions.cpp" />
     <ClCompile Include="BattleDefinitions.cpp" />
     <ClCompile Include="PartyFunctionDefinitions.cpp" />

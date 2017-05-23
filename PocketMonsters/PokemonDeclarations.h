@@ -1,4 +1,4 @@
-/*Class Declarations*/
+/*Declarations regarding pokemon and their qualities*/
 
 #ifndef POKEMON_DEC
 #define POKEMON_DEC
@@ -11,4 +11,5 @@ using namespace std;
 
 void pokemonSelection(vector<Pokemon> &pokemon_class, int number);
 
+MoveList moveListSelection(vector<MoveList> &move_class, int number);
 #endif
