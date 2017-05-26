@@ -8,6 +8,31 @@
 #include<vector>
 using namespace std;
 
+class MoveList
+{
+public:
+	void setName(string move_name);
+	string getName();
+	void setCategory(string category);
+	string getCategory();
+	void setType(string type);
+	string getType();
+	void setPower(int power);
+	int getPower();
+	void setAccuracy(int accuracy);
+	int getAccuracy();
+	void setPowerPoints(int pp);
+	int getPowerPoints();
+private:
+	string name_;
+	string category_;
+	string type_;
+	int power_;
+	int accuracy_;
+	int pp_;
+};
+
+
 class Pokemon
 {
 public:
@@ -37,6 +62,7 @@ public:
 
 	void dealDamage(int damage_dealt);
 
+	
 private:
 	string name_;
 	string nickname_;
@@ -53,30 +79,7 @@ private:
 
 	void changeExpLvlUp();
 
-	//vector<MoveList> available_moves;
+	vector<MoveList> available_moves;
 };
 
-class MoveList
-{
-public:
-	void setName(string move_name);
-	string getName();
-	void setCategory(string category);
-	string getCategory();
-	void setType(string type);
-	string getType();
-	void setPower(int power);
-	int getPower();
-	void setAccuracy(int accuracy);
-	int getAccuracy();
-	void setPowerPoints(int pp);
-	int getPowerPoints();
-private:
-	string name_;
-	string category_;
-	string type_;
-	int power_;
-	int accuracy_;
-	int pp_;
-};
 #endif
