@@ -62,7 +62,7 @@ public:
 
 	void dealDamage(int damage_dealt);
 
-	void setMoveList(vector<MoveList> adding_move);
+	void setMoveList(vector<MoveList> adding_move, int number);
 	int getMoveList();
 
 private:

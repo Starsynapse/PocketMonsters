@@ -18,5 +18,5 @@ int calculateTurnOrder(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &p
 
 void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class);
 
-
+int selectMove(vector<Pokemon> &pokemon_payer_class, vector<MoveList> move);
 #endif COUT_DEC
