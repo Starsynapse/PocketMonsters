@@ -14,8 +14,6 @@ void pokemonSelection(vector<Pokemon> &pokemon_class, int number)
 		pokemon_class.back().setSpecialAttack(65);
 		pokemon_class.back().setSpecialDefense(65);
 		pokemon_class.back().setSpeed(45);
-
-
 	}
 	else if (number == 2)
 	{

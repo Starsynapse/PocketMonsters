@@ -3,10 +3,11 @@ Author: Eduardo Zamora
 Date Created: 18 May 2017
 Date Edited: 18 May 2017*/
 
-#include"PartyFunctionDeclarations.h"
-#include"ClassDeclarations.h"
-#include"BattleDeclarations.h"
-#include<time.h> //for srand
+#include "PartyFunctionDeclarations.h"
+#include "ClassDeclarations.h"
+#include "BattleDeclarations.h"
+#include <cstdlib>
+#include <ctime> // for "srand" and "time"
 using namespace std;
 
 int main()
@@ -69,7 +70,7 @@ int main()
 	checkExpLvlUp(player_pokemon, earned_exp);
 	endOfBattleText(player_pokemon, earned_exp);
 	cout << player_pokemon.back().getSpecialDefense() << endl;
-
+	
 	system("pause");
 	return 0;
 }

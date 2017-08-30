@@ -62,7 +62,9 @@ public:
 
 	void dealDamage(int damage_dealt);
 
-	
+	void setMoveList(vector<MoveList> adding_move);
+	int getMoveList();
+
 private:
 	string name_;
 	string nickname_;

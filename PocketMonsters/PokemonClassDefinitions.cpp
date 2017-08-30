@@ -122,3 +122,13 @@ void Pokemon::changeExpLvlUp()
 {
 	exp_lvlup_ = lvl_ * lvl_ * lvl_;
 }
+
+void Pokemon::setMoveList(vector<MoveList> adding_move, int number)
+{
+	adding_move.emplace_back();
+}
+
+int Pokemon::getMoveList()
+{
+
+}
