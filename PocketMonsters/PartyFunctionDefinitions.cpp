@@ -10,6 +10,13 @@ void createPokemon(vector<Pokemon> &pokemon_class, int type)
 	pokemonSelection(pokemon_class, type);
 }
 
+void createMove(vector<Pokemon> &pokemon_class, int type)
+{
+	vector<MoveList> move;
+	moveListSelection(move, type);
+	pokemon_class.back().setMoveList(move, type);
+}
+
 void nicknamePokemon(vector<Pokemon> &pokemon_class, string nickname)
 {
 	if (nickname != "")

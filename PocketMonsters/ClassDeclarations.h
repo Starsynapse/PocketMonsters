@@ -62,8 +62,8 @@ public:
 
 	void dealDamage(int damage_dealt);
 
-	void setMoveList(vector<MoveList> adding_move, int number);
-	int getMoveList();
+	void setMoveList(vector<MoveList> adding_move, int which);
+	vector<MoveList> getMoveList();
 
 private:
 	string name_;
@@ -81,7 +81,10 @@ private:
 
 	void changeExpLvlUp();
 
-	vector<MoveList> available_moves;
+	vector<MoveList> move_1;
+	vector<MoveList> move_2;
+	vector<MoveList> move_3;
+	vector<MoveList> move_4;
 };
 
 #endif

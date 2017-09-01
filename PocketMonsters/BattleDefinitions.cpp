@@ -44,10 +44,10 @@ int calculateTurnOrder(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &p
 	}
 }
 
-int selectMove(vector<Pokemon> &pokemon_payer_class, vector<MoveList> move)
+void selectMove(vector<Pokemon> &pokemon_payer_class, int which)
 {
 	cout << "What attack will you use" << endl;
-	cout << pokemon_payer_class.back().
+	pokemon_payer_class.back().getMoveList();
 }
 
 void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class)
