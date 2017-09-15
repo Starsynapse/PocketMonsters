@@ -15,6 +15,7 @@ void createMove(vector<Pokemon> &pokemon_class, int type)
 	vector<MoveList> move;
 	moveListSelection(move, type);
 	pokemon_class.back().setMoveList(move, type);
+	cout << pokemon_class.back().getMoveList().back().getName() << endl;
 }
 
 void nicknamePokemon(vector<Pokemon> &pokemon_class, string nickname)

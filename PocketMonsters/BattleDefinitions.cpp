@@ -24,6 +24,7 @@ void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &p
 	int defence = pokemon_defence_class.back().getDefense();
 	int net_damage = damage - defence;
 	pokemon_defence_class.back().dealDamage(net_damage);
+	system("pause");//hacking microsoft
 }
 
 int calculateTurnOrder(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class)
@@ -90,4 +91,10 @@ void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &poke
 			order = 0;
 		}
 	}
+}
+
+void activeMoveSet(vector<MoveList> player_pokemon_move_list)
+//figuring stuff out
+{
+	cout << "1. " << player_pokemon_move_list.back().getName() << endl;
 }

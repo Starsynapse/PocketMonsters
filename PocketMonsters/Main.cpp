@@ -6,6 +6,7 @@ Date Edited: 18 May 2017*/
 #include "PartyFunctionDeclarations.h"
 #include "ClassDeclarations.h"
 #include "BattleDeclarations.h"
+#include "PokemonDeclarations.h"
 #include <cstdlib>
 #include <ctime> // for "srand" and "time"
 using namespace std;
@@ -64,6 +65,22 @@ int main()
 	cout << "Rival hp: " << rival_pokemon.back().getHealthPoints() << endl;
 	system("pause");
 	system("cls");
+	
+	vector<MoveList> moveing;
+	moveing.emplace_back();
+	moveListSelection(moveing, 10);
+	player_pokemon.back().setMoveList(moveing, 1);
+	cout << "middle" << endl;
+	//cout << player_pokemon.back().getMoveList().back().getName();
+
+	system("pause");
+	cout << "Before" << endl;
+	createMove(player_pokemon, 10);
+	cout << "After" << endl;
+
+	system("pause");//hack microsoft
+	activeMoveSet(player_pokemon.back().getMoveList());
+	cout << endl;
 
 	cout << "EXP to be earned: ";
 	cin >> earned_exp;

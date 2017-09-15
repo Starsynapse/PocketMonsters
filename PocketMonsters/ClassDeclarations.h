@@ -64,6 +64,7 @@ public:
 
 	void setMoveList(vector<MoveList> adding_move, int which);
 	vector<MoveList> getMoveList();
+	string getMoveListName();
 
 private:
 	string name_;

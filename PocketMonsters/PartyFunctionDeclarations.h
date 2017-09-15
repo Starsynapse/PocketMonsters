@@ -4,6 +4,8 @@
 #define FUNCTION_DEC
 
 #include"ClassDeclarations.h"
+#include<iostream>
+using namespace std;
 
 void createPokemon(vector<Pokemon> &pokemon_class, int type);
 

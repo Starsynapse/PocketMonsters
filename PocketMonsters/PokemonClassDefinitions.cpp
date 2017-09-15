@@ -130,5 +130,10 @@ void Pokemon::setMoveList(vector<MoveList> adding_move, int which)
 
 vector<MoveList> Pokemon::getMoveList()
 {
-	//
+	return move_1;
+}
+
+string Pokemon::getMoveListName()
+{
+	return move_1.back().getName();
 }
