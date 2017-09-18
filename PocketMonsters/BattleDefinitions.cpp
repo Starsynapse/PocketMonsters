@@ -14,8 +14,8 @@ void endOfBattleText(vector<Pokemon> &pokemon_class, int earned_exp)
 
 void battleText(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class)
 {
-	cout << pokemon_player_class.back().getNickname() << " has " << pokemon_player_class.back().getHealthPoints() << " hp." << endl;
-	cout << pokemon_enemy_class.back().getName() << " has " << pokemon_enemy_class.back().getHealthPoints() << " hp." << endl;
+	cout << "Your " << pokemon_player_class.back().getNickname() << " has " << pokemon_player_class.back().getHealthPoints() << " hp." << endl;
+	cout << "Enemy Pokemon " << pokemon_enemy_class.back().getName() << " has " << pokemon_enemy_class.back().getHealthPoints() << " hp." << endl;
 }
 
 void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &pokemon_defence_class)
@@ -56,7 +56,7 @@ void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &poke
 	int order = calculateTurnOrder(pokemon_player_class, pokemon_enemy_class);
 	while (order < 2)
 	{
-		cout << pokemon_player_class.back().getHealthPoints() << endl;
+		battleText(pokemon_player_class, pokemon_enemy_class);
 		if (pokemon_player_class.back().getHealthPoints() <= 0 || pokemon_enemy_class.back().getHealthPoints() <= 0)
 		{
 			cout << "hp detected 0" << endl;
@@ -78,8 +78,6 @@ void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &poke
 		{
 			cout << "What the hell did you break?" << endl;
 		}
-
-		battleText(pokemon_player_class, pokemon_enemy_class);
 
 		if (order == 0)
 		{

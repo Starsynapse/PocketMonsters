@@ -55,14 +55,9 @@ int main()
 	createPokemon(rival_pokemon, rival_choices);
 
 	//testing
-	
-
-	cout << "you go first." << endl;
-	cout << "Player hp: " << player_pokemon.back().getHealthPoints() << endl;
-	cout << "Rival hp: " << rival_pokemon.back().getHealthPoints() << endl;
 	mainBattleLoop(player_pokemon, rival_pokemon);
-	cout << "Player hp: " << player_pokemon.back().getHealthPoints() << endl;
-	cout << "Rival hp: " << rival_pokemon.back().getHealthPoints() << endl;
+	battleText(player_pokemon, rival_pokemon);
+
 	system("pause");
 	system("cls");
 	
