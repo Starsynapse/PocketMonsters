@@ -12,13 +12,13 @@ void endOfBattleText(vector<Pokemon> &pokemon_class, int earned_exp);
 
 void battleText(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class);
 
-void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &pokemon_defence_class);
+void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &pokemon_defence_class, vector<MoveList> &pokemon_moves);
 
 int calculateTurnOrder(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class);
 
-void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class);
+void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class, vector<MoveList> &pokemon_moves);
 
-void selectMove(vector<Pokemon> &pokemon_payer_class, int which);
+void selectMove(vector<Pokemon> &pokemon_payer_class, vector<MoveList> &pokemon_move_class);
 
-void activeMoveSet(vector<MoveList> player_pokemon_move_list);
+void activeMoveSet(vector<MoveList> player_pokemon_move_list, int move_number);
 #endif COUT_DEC

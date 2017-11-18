@@ -11,6 +11,8 @@ using namespace std;
 class MoveList
 {
 public:
+	void setNumber(int number);
+	int getNumber();
 	void setName(string move_name);
 	string getName();
 	void setCategory(string category);
@@ -24,6 +26,7 @@ public:
 	void setPowerPoints(int pp);
 	int getPowerPoints();
 private:
+	int number_;
 	string name_;
 	string category_;
 	string type_;
@@ -62,9 +65,14 @@ public:
 
 	void dealDamage(int damage_dealt);
 
-	void setMoveList(vector<MoveList> adding_move, int which);
-	vector<MoveList> getMoveList();
-	string getMoveListName();
+	void setMoveOne(int move_one);
+	int getMoveOne();
+	void setMoveTwo(int move_two);
+	int getMoveTwo();
+	void setMoveThree(int move_three);
+	int getMoveThree();
+	void setMoveFour(int move_four);
+	int getMoveFour();
 
 private:
 	string name_;
@@ -82,10 +90,10 @@ private:
 
 	void changeExpLvlUp();
 
-	vector<MoveList> move_1;
-	vector<MoveList> move_2;
-	vector<MoveList> move_3;
-	vector<MoveList> move_4;
+	int move_one_;
+	int move_two_;
+	int move_three_;
+	int move_four_;
 };
 
 #endif

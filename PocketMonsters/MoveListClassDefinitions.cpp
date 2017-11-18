@@ -2,6 +2,16 @@
 MoveList class*/
 #include"ClassDeclarations.h"
 
+void MoveList::setNumber(int number)
+{
+	number_ = number;
+}
+
+int MoveList::getNumber()
+{
+	return number_;
+}
+
 void MoveList::setName(string move_name)
 {
 	name_ = move_name;

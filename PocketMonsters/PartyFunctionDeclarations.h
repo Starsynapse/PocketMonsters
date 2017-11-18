@@ -9,7 +9,7 @@ using namespace std;
 
 void createPokemon(vector<Pokemon> &pokemon_class, int type);
 
-void createMove(vector<Pokemon> &pokemon_class, int type);
+void createMove(vector<MoveList> &pokemon_move, int type);
 
 void nicknamePokemon(vector<Pokemon> &pokemon_class, string nickname);
 

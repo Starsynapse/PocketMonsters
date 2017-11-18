@@ -5,21 +5,23 @@ void moveListSelection(vector<MoveList> &move_class, int number)
 {
 	if (number == 10)
 	{
-		move_class.back().setName("Scratch");
-		move_class.back().setCategory("Physical");
-		move_class.back().setType("Normal");
-		move_class.back().setPower(40);
-		move_class.back().setAccuracy(100);
-		move_class.back().setPowerPoints(35);
+		move_class.at(number - 1).setNumber(number);
+		move_class.at(number - 1).setName("Scratch");
+		move_class.at(number - 1).setCategory("Physical");
+		move_class.at(number - 1).setType("Normal");
+		move_class.at(number - 1).setPower(40);
+		move_class.at(number - 1).setAccuracy(100);
+		move_class.at(number - 1).setPowerPoints(35);
 	}
 
 	else if (number == 33)
 	{
-		move_class.back().setName("Takle");
-		move_class.back().setCategory("Physical");
-		move_class.back().setType("Normal");
-		move_class.back().setPower(40);
-		move_class.back().setAccuracy(100);
-		move_class.back().setPowerPoints(35);
+		move_class.at(number - 1).setNumber(number);
+		move_class.at(number - 1).setName("Takle");
+		move_class.at(number - 1).setCategory("Physical");
+		move_class.at(number - 1).setType("Normal");
+		move_class.at(number - 1).setPower(40);
+		move_class.at(number - 1).setAccuracy(100);
+		move_class.at(number - 1).setPowerPoints(35);
 	}
 }

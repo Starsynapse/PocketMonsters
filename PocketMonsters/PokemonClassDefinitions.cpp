@@ -118,22 +118,47 @@ void Pokemon::dealDamage(int damage_dealt)
 	hp_ = hp_ - damage_dealt;
 }
 
+void Pokemon::setMoveOne(int move_one)
+{
+	move_one_ = move_one;
+}
+
+int Pokemon::getMoveOne()
+{
+	return move_one_;
+}
+
+void Pokemon::setMoveTwo(int move_two)
+{
+	move_two_ = move_two;
+}
+
+int Pokemon::getMoveTwo()
+{
+	return move_two_;
+}
+
+void Pokemon::setMoveThree(int move_three)
+{
+	move_three_ = move_three;
+}
+
+int Pokemon::getMoveThree()
+{
+	return move_three_;
+}
+
+void Pokemon::setMoveFour(int move_four)
+{
+	move_four_ = move_four;
+}
+
+int Pokemon::getMoveFour()
+{
+	return move_four_;
+}
+
 void Pokemon::changeExpLvlUp()
 {
 	exp_lvlup_ = lvl_ * lvl_ * lvl_;
-}
-
-void Pokemon::setMoveList(vector<MoveList> adding_move, int which)
-{
-	move_1 = adding_move;
-}
-
-vector<MoveList> Pokemon::getMoveList()
-{
-	return move_1;
-}
-
-string Pokemon::getMoveListName()
-{
-	return move_1.back().getName();
 }
