@@ -1,6 +1,6 @@
 /*Definitions for the functions in the
 MoveList class*/
-#include"ClassDeclarations.h"
+#include"MoveListClassDeclarations.h"
 
 void MoveList::setNumber(int number)
 {

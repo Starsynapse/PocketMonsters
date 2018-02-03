@@ -120,9 +120,10 @@
     <ClCompile Include="PokemonDefinitions.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassDeclarations.h" />
+    <ClInclude Include="MoveListClassDeclarations.h" />
     <ClInclude Include="BattleDeclarations.h" />
     <ClInclude Include="PartyFunctionDeclarations.h" />
+    <ClInclude Include="PokemonClassDeclarations.h" />
     <ClInclude Include="PokemonDeclarations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

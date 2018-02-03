@@ -1,5 +1,5 @@
 
-#include"ClassDeclarations.h"
+#include"PokemonClassDeclarations.h"
 
 Pokemon::Pokemon()
 {

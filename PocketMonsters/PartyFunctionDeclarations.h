@@ -3,7 +3,8 @@
 #ifndef FUNCTION_DEC
 #define FUNCTION_DEC
 
-#include"ClassDeclarations.h"
+#include "MoveListClassDeclarations.h"
+#include "PokemonClassDeclarations.h"
 #include<iostream>
 using namespace std;
 

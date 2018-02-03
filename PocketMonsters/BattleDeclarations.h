@@ -5,7 +5,8 @@ involving the paarty class*/
 #define COUT_DEC
 
 #include<vector>
-#include"ClassDeclarations.h"
+#include"MoveListClassDeclarations.h"
+#include"PokemonClassDeclarations.h"
 using namespace std;
 
 void endOfBattleText(vector<Pokemon> &pokemon_class, int earned_exp);
@@ -20,5 +21,4 @@ void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &poke
 
 void selectMove(vector<Pokemon> &pokemon_payer_class, vector<MoveList> &pokemon_move_class);
 
-void activeMoveSet(vector<MoveList> player_pokemon_move_list, int move_number);
 #endif COUT_DEC

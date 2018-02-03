@@ -1,5 +1,5 @@
 /*Definitions for all possible pokemon moves*/
-#include"ClassDeclarations.h"
+#include"MoveListClassDeclarations.h"
 
 void moveListSelection(vector<MoveList> &move_class, int number)
 {

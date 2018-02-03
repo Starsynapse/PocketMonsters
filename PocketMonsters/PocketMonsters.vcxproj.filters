@@ -47,7 +47,10 @@
     <ClInclude Include="BattleDeclarations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClassDeclarations.h">
+    <ClInclude Include="MoveListClassDeclarations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PokemonClassDeclarations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

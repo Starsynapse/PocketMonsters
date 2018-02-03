@@ -4,7 +4,8 @@ Date Created: 18 May 2017
 Date Edited: 18 May 2017*/
 
 #include "PartyFunctionDeclarations.h"
-#include "ClassDeclarations.h"
+#include "MoveListClassDeclarations.h"
+#include "PokemonClassDeclarations.h"
 #include "BattleDeclarations.h"
 #include "PokemonDeclarations.h"
 #include <cstdlib>
@@ -65,7 +66,8 @@ int main()
 	cout << player_pokemon.back().getMoveOne() << endl;
 	cout << "before active move set" << endl;
 	system("pause");//hack microsoft
-	activeMoveSet(global_move_list, player_pokemon.back().getMoveOne());
+
+	rival_pokemon.back().setMoveOne(10);
 
 	cout << "after active move set" << endl;
 	system("pause");
