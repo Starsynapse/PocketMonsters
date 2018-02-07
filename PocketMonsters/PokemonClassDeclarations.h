@@ -61,7 +61,7 @@ private:
 	int speed_;
 
 	void changeExpLvlUp();
-
+	
 	int move_one_;
 	int move_two_;
 	int move_three_;
