@@ -20,12 +20,12 @@ int main()
 	vector<MoveList> global_move_list;
 	int choices;
 	int rival_choices;
-	//char yes_no;
+	//char yes_no; //obsolete?
 	string nickname_pokemon;
 	int earned_exp;
 
 	srand(time(NULL));
-	global_move_list.resize(25);
+	global_move_list.resize(50);
 
 	//introduction & pick starter text
 	cout << "Hello There! Welcome to the world of pokemon!\n";
@@ -58,25 +58,20 @@ int main()
 	createPokemon(rival_pokemon, rival_choices);
 
 	//testing
-	createMove(global_move_list, 10);
-	cout << global_move_list.at(9).getName() << endl;
-	cout << "move created" << endl;
-
-	player_pokemon.back().setMoveOne(10);
-	cout << player_pokemon.back().getMoveOne() << endl;
-	cout << "before active move set" << endl;
-	system("pause");//hack microsoft
-
-	rival_pokemon.back().setMoveOne(10);
-
-	cout << "after active move set" << endl;
+	cout << "===== Testing begins =====" << endl;
+	cout << player_pokemon.back().getName() << endl;
 	system("pause");
 
-	mainBattleLoop(player_pokemon, rival_pokemon, global_move_list);
-	battleText(player_pokemon, rival_pokemon);
-	
-	system("pause");//hack microsoft
-	cout << endl;
+	player_pokemon.back().setMoveVector(10);
+	cout << "1 of 2" << endl;
+	system("pause");
+	cout << player_pokemon.back().getMoveName(9) << endl;
+	cout << "2 of 2" << endl;
+	system("pause");
+
+	rival_pokemon.back().setMoveVector(10);
+
+	mainBattleLoop(player_pokemon, rival_pokemon);
 
 	cout << "EXP to be earned: ";
 	cin >> earned_exp;

@@ -6,6 +6,7 @@
 #include<string>
 #include<iostream>
 #include<vector>
+#include"MoveListClassDeclarations.h" //========== test =========
 using namespace std;
 
 class Pokemon
@@ -46,6 +47,14 @@ public:
 	void setMoveFour(int move_four);
 	int getMoveFour();
 
+	//========= start test ==========
+
+	void setMoveVector(/*vector<MoveList> pokemon_move,*/ int number);
+	string getMoveName(int move);
+	int getMovePower(int move);
+
+	//========= end test ==========
+
 private:
 	string name_;
 	string nickname_;
@@ -66,6 +75,14 @@ private:
 	int move_two_;
 	int move_three_;
 	int move_four_;
+
+	//========= start test ==========
+
+	void moveListSelectionPrivate(vector<MoveList> &move_class, int &number);
+
+	vector<MoveList> local_move_list_;
+
+	//========= end test ==========
 };
 
 #endif

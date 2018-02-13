@@ -18,13 +18,10 @@ void battleText(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_
 	cout << "Enemy Pokemon " << pokemon_enemy_class.back().getName() << " has " << pokemon_enemy_class.back().getHealthPoints() << " hp." << endl;
 }
 
-void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &pokemon_defence_class, vector<MoveList> &pokemon_move)
+void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &pokemon_defence_class)
 {
 	int level = pokemon_attack_class.back().getLevel();
-	cout << "lol: " << pokemon_attack_class.back().getMoveOne() - 1 << endl;
-	cout << "lol2: " << pokemon_move.at(9).getPower() << endl;
-	cout << "lol3: " << pokemon_move.at(pokemon_attack_class.back().getMoveOne() - 1).getPower() << endl;
-	int power = pokemon_move.at(pokemon_attack_class.back().getMoveOne() - 1).getPower();
+	int power = pokemon_attack_class.back().getMovePower(9);
 	int attack = pokemon_attack_class.back().getAttack();
 	int defense = pokemon_defence_class.back().getDefense();
 	
@@ -54,25 +51,23 @@ int calculateTurnOrder(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &p
 	}
 }
 
-void selectMove(vector<Pokemon> &pokemon_player_class, vector<MoveList> &pokemon_move_class)
+void selectMove(vector<Pokemon> &pokemon_player_class)
 {
 	int move_selected;
 	cout << "Select move you want to use." << endl;
-	cout << "1: " << pokemon_move_class.at(pokemon_player_class.back().getMoveOne() - 1).getName() << endl;
+	cout << "1: " << pokemon_player_class.back().getMoveName(9);
 	cin >> move_selected;
 	if (move_selected == 1)
 	{
-		cout << "move: " << pokemon_player_class.back().getMoveOne() << endl;
+		cout << "move: " << pokemon_player_class.back().getMoveName(move_selected - 1) << endl;
 	}
 }
 
-void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class, vector<MoveList> &pokemon_moves)
+void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_enemy_class)
 {
 	int order = calculateTurnOrder(pokemon_player_class, pokemon_enemy_class);
-	//int selected_move;
 	while (order < 2)
 	{
-		cout << "meow: " << pokemon_player_class.back().getMoveOne() << endl;
 		battleText(pokemon_player_class, pokemon_enemy_class);
 		if (pokemon_player_class.back().getHealthPoints() <= 0 || pokemon_enemy_class.back().getHealthPoints() <= 0)
 		{
@@ -83,14 +78,14 @@ void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &poke
 		else if (order == 0)
 		{
 			cout << "zero: " << endl;
-			selectMove(pokemon_player_class, pokemon_moves);
-			damageCalculation(pokemon_player_class, pokemon_enemy_class, pokemon_moves);
+			selectMove(pokemon_player_class);
+			damageCalculation(pokemon_player_class, pokemon_enemy_class);
 		}
 
 		else if (order == 1)
 		{
 			cout << "one: " << endl;
-			damageCalculation(pokemon_enemy_class, pokemon_player_class, pokemon_moves);
+			damageCalculation(pokemon_enemy_class, pokemon_player_class);
 		}
 
 		else
