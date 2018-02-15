@@ -55,7 +55,7 @@ void selectMove(vector<Pokemon> &pokemon_player_class)
 {
 	int move_selected;
 	cout << "Select move you want to use." << endl;
-	cout << "1: " << pokemon_player_class.back().getMoveName(9);
+	cout << "1: " << pokemon_player_class.back().getMoveName(0);
 	cin >> move_selected;
 	if (move_selected == 1)
 	{

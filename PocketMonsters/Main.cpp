@@ -62,15 +62,18 @@ int main()
 	cout << player_pokemon.back().getName() << endl;
 	system("pause");
 
-	player_pokemon.back().setMoveVector(10);
+	player_pokemon.back().setMoveVector(10, 1);
 	cout << "1 of 2" << endl;
 	system("pause");
-	cout << player_pokemon.back().getMoveName(9) << endl;
+	cout << player_pokemon.back().getMoveName(0) << endl;
 	cout << "2 of 2" << endl;
 	system("pause");
 
-	rival_pokemon.back().setMoveVector(10);
+	rival_pokemon.back().setMoveVector(10, 1);
 
+	cout << "move list" << endl;
+	cout << player_pokemon.back().getMoveName(0) << endl;
+	cout << endl;
 	mainBattleLoop(player_pokemon, rival_pokemon);
 
 	cout << "EXP to be earned: ";

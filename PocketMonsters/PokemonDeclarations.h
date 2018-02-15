@@ -11,6 +11,4 @@
 using namespace std;
 
 void pokemonSelection(vector<Pokemon> &pokemon_class, int number);
-
-void moveListSelection(vector<MoveList> &pokemon_move, int number);
 #endif

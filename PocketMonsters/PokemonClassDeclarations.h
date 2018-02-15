@@ -49,7 +49,7 @@ public:
 
 	//========= start test ==========
 
-	void setMoveVector(/*vector<MoveList> pokemon_move,*/ int number);
+	void setMoveVector(int number, int move_slot);
 	string getMoveName(int move);
 	int getMovePower(int move);
 
@@ -78,7 +78,7 @@ private:
 
 	//========= start test ==========
 
-	void moveListSelectionPrivate(vector<MoveList> &move_class, int &number);
+	void moveListSelectionPrivate(vector<MoveList> &move_class, int number, int move_slot);
 
 	vector<MoveList> local_move_list_;
 
