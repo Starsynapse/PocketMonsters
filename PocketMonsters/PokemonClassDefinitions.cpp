@@ -7,7 +7,7 @@ Pokemon::Pokemon()
 	exp_ = 0;
 	lvl_ = 5;
 	exp_lvlup_ = lvl_ * lvl_ * lvl_;
-	local_move_list_.resize(50);
+	local_move_list_.resize(9);
 }
 
 void Pokemon::setName(string name)
@@ -338,13 +338,134 @@ void Pokemon::moveListSelectionPrivate(vector<MoveList> &move_class, int number,
 		move_class.at(move_slot - 1).setPowerPoints(20);
 	}
 
+	else if (number == 15)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Cut");
+		move_class.at(move_slot - 1).setCategory("Physical");
+		move_class.at(move_slot - 1).setType("Normal");
+		move_class.at(move_slot - 1).setPower(50);
+		move_class.at(move_slot - 1).setAccuracy(95);
+		move_class.at(move_slot - 1).setPowerPoints(30);
+	}
+
+	else if (number == 16)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Gust");
+		move_class.at(move_slot - 1).setCategory("Special");
+		move_class.at(move_slot - 1).setType("Flying");
+		move_class.at(move_slot - 1).setPower(40);
+		move_class.at(move_slot - 1).setAccuracy(100);
+		move_class.at(move_slot - 1).setPowerPoints(35);
+	}
+
+	else if (number == 17)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Wing Attack");
+		move_class.at(move_slot - 1).setCategory("Physical");
+		move_class.at(move_slot - 1).setType("Flying");
+		move_class.at(move_slot - 1).setPower(40);
+		move_class.at(move_slot - 1).setAccuracy(100);
+		move_class.at(move_slot - 1).setPowerPoints(35);
+	}
+
+	else if (number == 18)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Whirlwind");
+		move_class.at(move_slot - 1).setCategory("Status");
+		move_class.at(move_slot - 1).setType("Normal");
+		move_class.at(move_slot - 1).setPower(100);
+		move_class.at(move_slot - 1).setAccuracy(100);
+		move_class.at(move_slot - 1).setPowerPoints(20);
+	}
+
+	else if (number == 19)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Fly");
+		move_class.at(move_slot - 1).setCategory("Physical");
+		move_class.at(move_slot - 1).setType("Flying");
+		move_class.at(move_slot - 1).setPower(90);
+		move_class.at(move_slot - 1).setAccuracy(95);
+		move_class.at(move_slot - 1).setPowerPoints(15);
+	}
+
+	else if (number == 20)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Bind");
+		move_class.at(move_slot - 1).setCategory("Pysical");
+		move_class.at(move_slot - 1).setType("Normal");
+		move_class.at(move_slot - 1).setPower(15);
+		move_class.at(move_slot - 1).setAccuracy(85);
+		move_class.at(move_slot - 1).setPowerPoints(20);
+	}
+
+	else if (number == 21)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Slam");
+		move_class.at(move_slot - 1).setCategory("Physical");
+		move_class.at(move_slot - 1).setType("Normal");
+		move_class.at(move_slot - 1).setPower(80);
+		move_class.at(move_slot - 1).setAccuracy(75);
+		move_class.at(move_slot - 1).setPowerPoints(20);
+	}
+
+	else if (number == 22)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Vine Whip");
+		move_class.at(move_slot - 1).setCategory("Physical");
+		move_class.at(move_slot - 1).setType("Grass");
+		move_class.at(move_slot - 1).setPower(45);
+		move_class.at(move_slot - 1).setAccuracy(100);
+		move_class.at(move_slot - 1).setPowerPoints(25);
+	}
+
+	else if (number == 23)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Stomp");
+		move_class.at(move_slot - 1).setCategory("Physical");
+		move_class.at(move_slot - 1).setType("Normal");
+		move_class.at(move_slot - 1).setPower(65);
+		move_class.at(move_slot - 1).setAccuracy(100);
+		move_class.at(move_slot - 1).setPowerPoints(20);
+	}
+
+	else if (number == 24)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Double Kick");
+		move_class.at(move_slot - 1).setCategory("Physical");
+		move_class.at(move_slot - 1).setType("Fighting");
+		move_class.at(move_slot - 1).setPower(30);
+		move_class.at(move_slot - 1).setAccuracy(100);
+		move_class.at(move_slot - 1).setPowerPoints(30);
+	}
+
+	else if (number == 25)
+	{
+		move_class.at(move_slot - 1).setNumber(number);
+		move_class.at(move_slot - 1).setName("Mega Kick");
+		move_class.at(move_slot - 1).setCategory("Physical");
+		move_class.at(move_slot - 1).setType("Normal");
+		move_class.at(move_slot - 1).setPower(120);
+		move_class.at(move_slot - 1).setAccuracy(75);
+		move_class.at(move_slot - 1).setPowerPoints(5);
+	}
+
 	else if (number == 33)
 	{
 		move_class.at(move_slot - 1).setNumber(number);
 		move_class.at(move_slot - 1).setName("Takle");
 		move_class.at(move_slot - 1).setCategory("Physical");
 		move_class.at(move_slot - 1).setType("Normal");
-		move_class.at(move_slot - 1).setPower(40);
+		move_class.at(move_slot - 1).setPower(60);
 		move_class.at(move_slot - 1).setAccuracy(100);
 		move_class.at(move_slot - 1).setPowerPoints(35);
 	}

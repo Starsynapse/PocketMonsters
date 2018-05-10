@@ -21,7 +21,7 @@ void battleText(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &pokemon_
 void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &pokemon_defence_class)
 {
 	int level = pokemon_attack_class.back().getLevel();
-	int power = pokemon_attack_class.back().getMovePower(9);
+	int power = pokemon_attack_class.back().getMovePower(0);
 	int attack = pokemon_attack_class.back().getAttack();
 	int defense = pokemon_defence_class.back().getDefense();
 	
