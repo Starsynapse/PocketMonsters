@@ -459,16 +459,226 @@ void Pokemon::moveListSelectionPrivate(vector<MoveList> &move_class, int number,
 		move_class.at(move_slot - 1).setPowerPoints(5);
 	}
 
+    else if (number == 26)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Jump Kick");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Fighting");
+        move_class.at(move_slot - 1).setPower(100);
+        move_class.at(move_slot - 1).setAccuracy(95);
+        move_class.at(move_slot - 1).setPowerPoints(10);
+    }
+
+    else if (number == 27)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Rolling Kick");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Fighting");
+        move_class.at(move_slot - 1).setPower(60);
+        move_class.at(move_slot - 1).setAccuracy(85);
+        move_class.at(move_slot - 1).setPowerPoints(15);
+    }
+
+    else if (number == 28)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Sand Attack");
+        move_class.at(move_slot - 1).setCategory("Status");
+        move_class.at(move_slot - 1).setType("Ground");
+        move_class.at(move_slot - 1).setPower(0);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(15);
+    }
+
+    else if (number == 29)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Headbutt");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(70);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(15);
+    }
+
+    else if (number == 30)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Horn Attack");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(65);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(25);
+    }
+
+    else if (number == 31)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Fury Attack");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(15);
+        move_class.at(move_slot - 1).setAccuracy(85);
+        move_class.at(move_slot - 1).setPowerPoints(20);
+    }
+
+
+    else if (number == 32)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Horn Drill");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(0);
+        move_class.at(move_slot - 1).setAccuracy(0);
+        move_class.at(move_slot - 1).setPowerPoints(5);
+    }
+
 	else if (number == 33)
 	{
 		move_class.at(move_slot - 1).setNumber(number);
 		move_class.at(move_slot - 1).setName("Takle");
 		move_class.at(move_slot - 1).setCategory("Physical");
 		move_class.at(move_slot - 1).setType("Normal");
-		move_class.at(move_slot - 1).setPower(60);
+		move_class.at(move_slot - 1).setPower(40);
 		move_class.at(move_slot - 1).setAccuracy(100);
 		move_class.at(move_slot - 1).setPowerPoints(35);
 	}
+
+    else if (number == 34)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Body Slam");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(85);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(15);
+    }
+
+    else if (number == 35)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Wrap");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(15);
+        move_class.at(move_slot - 1).setAccuracy(90);
+        move_class.at(move_slot - 1).setPowerPoints(20);
+    }
+
+    else if (number == 36)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Take Down");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(90);
+        move_class.at(move_slot - 1).setAccuracy(85);
+        move_class.at(move_slot - 1).setPowerPoints(20);
+    }
+
+    else if (number == 37)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Thrash");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(120);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(10);
+    }
+
+    else if (number == 38)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Double-Edge");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(120);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(15);
+    }
+
+    else if (number == 39)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Tail Whip");
+        move_class.at(move_slot - 1).setCategory("Status");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(0);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(30);
+    }
+
+    else if (number == 40)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Poison Sting");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Poison");
+        move_class.at(move_slot - 1).setPower(15);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(35);
+    }
+
+    else if (number == 41)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Twineedle");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Bug");
+        move_class.at(move_slot - 1).setPower(25);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(20);
+    }
+
+    else if (number == 42)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Pin Missle");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Bug");
+        move_class.at(move_slot - 1).setPower(25);
+        move_class.at(move_slot - 1).setAccuracy(95);
+        move_class.at(move_slot - 1).setPowerPoints(20);
+    }
+
+    else if (number == 43)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Leer");
+        move_class.at(move_slot - 1).setCategory("Status");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(0);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(30);
+    }
+
+    else if (number == 44)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Bite");
+        move_class.at(move_slot - 1).setCategory("Physical");
+        move_class.at(move_slot - 1).setType("Dark");
+        move_class.at(move_slot - 1).setPower(60);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(25);
+    }
+
+    else if (number == 45)
+    {
+        move_class.at(move_slot - 1).setNumber(number);
+        move_class.at(move_slot - 1).setName("Growl");
+        move_class.at(move_slot - 1).setCategory("Status");
+        move_class.at(move_slot - 1).setType("Normal");
+        move_class.at(move_slot - 1).setPower(0);
+        move_class.at(move_slot - 1).setAccuracy(100);
+        move_class.at(move_slot - 1).setPowerPoints(40);
+    }
 }
 
 //========= end test ==========

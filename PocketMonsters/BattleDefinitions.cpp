@@ -25,7 +25,7 @@ void damageCalculation(vector<Pokemon> &pokemon_attack_class, vector<Pokemon> &p
 	int attack = pokemon_attack_class.back().getAttack();
 	int defense = pokemon_defence_class.back().getDefense();
 	
-	cout << "hi 1" << endl;
+	cout << "damageCalculation" << endl;
 	int damage = (((((2 * level)/5)+2)*power*attack/defense)/50) + 2;
 	cout << "damage: " << damage << endl;
 	pokemon_defence_class.back().dealDamage(damage);
@@ -84,7 +84,6 @@ void mainBattleLoop(vector<Pokemon> &pokemon_player_class, vector<Pokemon> &poke
 
 		else if (order == 1)
 		{
-			cout << "one: " << endl;
 			damageCalculation(pokemon_enemy_class, pokemon_player_class);
 		}
 
