@@ -60,9 +60,9 @@ int main()
 	//testing
 	cout << "===== Testing begins =====" << endl;
 
-	player_pokemon.back().setMoveVector(10, 1);
+	player_pokemon.back().setMoveVector(10, 0);
 
-	rival_pokemon.back().setMoveVector(10, 1);
+	rival_pokemon.back().setMoveVector(10, 0);
 
 	cout << "move list" << endl;
 	cout << player_pokemon.back().getMoveName(0) << endl;
